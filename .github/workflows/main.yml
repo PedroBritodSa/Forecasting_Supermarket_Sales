@@ -1,8 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '*'
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Install gfortran
         run: sudo apt-get update && sudo apt-get install gfortran
-      
-      # Add other steps for Python setup, such as installing dependencies and running tests
