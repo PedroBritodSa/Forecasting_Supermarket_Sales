@@ -17,4 +17,4 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install -r /mount/src/forecasting_supermarket_sales/requirements.txt
+          pip install -r https://raw.githubusercontent.com/PedroBritodSa/Forecasting_Supermarket_Sales/main/requirements.txt
