@@ -9,5 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install gfortran
-        run: sudo apt-get update && sudo apt-get install gfortran
+      - name: Install gfortran and other build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gfortran
+          # Add other build dependencies if needed
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r /mount/src/forecasting_supermarket_sales/requirements.txt
