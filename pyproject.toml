@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.cython]
+# Add any Cython-specific configuration options here
+# For example:
+ language_level = 3
+
+[tool.numpy]
+# Add any NumPy-specific configuration options here
+# For example:
+ force-f2py = true
+
+[tool.pytest.ini_options]
+# Add any pytest-specific configuration options here
+# For example:
+ minversion = "6.0"
+
+[tool.setuptools]
+# Add any setuptools-specific configuration options here
+# For example:
+ setup_requires = ["cython"]
+ cythonized_modules = ["your_module.pyx"]
