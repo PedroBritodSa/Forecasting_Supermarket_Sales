@@ -7,15 +7,20 @@ This project aims to forecast sales for supermarkets using historical sales data
 The dataset used in this project (VendasSupermercados+CDI.csv) contains historical sales data along with CDI information. The data is stored in a CSV format and contains only one column, which can be separeted in three:
 
 Date: Date of the sales record
+
 VendasSupermercados: Sales amount in supermarkets
+
 CDI: Certificate of Deposit Interbank rate
 
 ## Data Preprocessing
 The following steps were performed for data preprocessing:
 
 Splitting the combined features in the dataset into separate columns.
+
 Converting the Date column to datetime format and other features to numerical format.
+
 Checking for missing values and outliers.
+
 Exploratory Data Analysis (EDA) to understand the distribution of data.
 
 ## Training the Model
